@@ -1,0 +1,26 @@
+[data-name]{
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+ul>li:nth-child(2):hover {
+    background-color: yellow;
+}
+
+li.emoji:after {
+    content: "\01F525";
+}
+
+ul>li:last-child::first-letter {
+    color: orange;
+}
+
+a:link{
+    color: red;
+}
+
+a:visited {
+    text-decoration: none;
+    color: green;
+}
+

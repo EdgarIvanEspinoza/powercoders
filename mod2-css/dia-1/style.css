@@ -1,0 +1,85 @@
+h1 {
+    color: goldenrod;
+}
+
+/* Un comentario
+   puede
+   ocupar varias lineas */
+
+section#primero > p > span {
+    text-decoration: underline;
+}
+
+/* Para seleccionar un id ponemos almohadilla y el nombre */
+#cabecera {
+    background: blue;
+}
+
+/* Para seleccionar una clase ponemos punto y el nombre */
+.destacado {
+    font-weight: bold;
+}
+
+/* Selector por atributo (no hay por qué poner el valor) */
+[type='checkbox'] {
+    width: 50px;
+    height: 50px;
+}
+
+/* Un data attribute es un atributo personalizado que empieza por "data-" */
+[data-mi-atributo-personalizado] {
+    font-size: 60px;
+}
+
+/* 
+    - [id^="se"] => Cualquier id que empiece por "se".
+    - [lang$="se"] => Cualquier id que termine por "se".
+    - [name*="se"] => Cualquier id que contenga "se" en cualquier lugar.
+*/
+
+/* Las pseudo-clases se escriben con dos puntos (:) a la derecha de la etiqueta */
+a:visited {
+    color: gray;
+}
+
+/* Si pasamos el ratón por encima del li el tamaño de la fuente aumenta a 20px */
+li:hover {
+    font-size: 20px;
+}
+
+li:first-child,
+li:last-child {
+    color: red;
+}
+
+section#segundo > ul > li:nth-child(4) {
+    color: blue;
+}
+
+li:nth-child(even) {
+    text-decoration: underline;
+}
+
+section#tercero > ul > li:nth-child(3) {
+    color: brown;
+}
+
+/* Utilizamos una pseudo-clase para seleccionar el primer párrafo y posteriormente
+   aplicamos un pseudo-elemento para seleccionar la primera letra de ese párrafo */
+section#primero > p:first-of-type::first-letter {
+    color: white;
+    font-size: 30px;
+    background-color: black;
+}
+
+section#primero > p:nth-child(3)::first-line:not() {
+    color: blue;
+    text-transform: uppercase;
+}
+
+/* Cuando seleccionemos un párrafo o cualquiera de sus hijos... */
+section#primero > p::selection,
+section#primero > p > ::selection {
+    background-color: blue;
+    color: white;
+}

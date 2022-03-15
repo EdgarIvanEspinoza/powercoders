@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
+}
+
+body{
+    background-image: url('../img/hamburguesa.png');
+    background-position: center;
+    background-size: cover;
+    font-family: 'Source Sans Pro';
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+section {
+    width: 100vw;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3  {
+    font-style: italic;
+}
+
+h3+ul > li {
+    list-style-type: none;
+    display: inline;
+}
+
+ul {
+    padding: 0px;
+}
+
+h2+ul> li {
+    list-style-type: none;
+    display: block;
+}
+
+input[type="text"], input[type="tel"], textarea{
+    width: 300px;
+    margin: 10px;
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    padding: auto;
+    max-width: 300px;
+    min-width: 100px;
+    margin-left: 20px;
+    align-self: center;
+}

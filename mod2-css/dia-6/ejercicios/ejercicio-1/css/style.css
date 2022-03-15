@@ -1,0 +1,31 @@
+.lista li:last-child {
+    background-color: blue;
+}
+
+.lista li:nth-child(even) {
+    text-decoration: underline green;
+}
+
+.lista li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    padding: 0px;
+}
+
+.lista li::after {
+    content: "👊";
+}
+
+li[lang="en"] {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#provincias li {
+    list-style-type: lower-roman;
+}
+
+#provincias li:nth-child(2) {
+    list-style-type: disc;
+}

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+@font-face {
+    font-family: 'cantarell', Arial;
+    src: url(./fonts/Cantarell.ttf), url(./fonts/Cantarell.woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Podemos representar colores utilizando su nombre (asigando por CSS) o mediante
+   la representacion rgb. A esta representación le podemos añadir una transparencia
+   (rgba) añadiendo la letra "a" de "alpha". Dicha trasparencia comprende valores 
+   entre 0 y 1 (0.1, 0.9, etc.). 
+   
+   También se puede utilizar la representación hexadecimal: #ff0000 (color rojo). */
+body {
+    background-color: rgba(119, 255, 56, 0.582);
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-style: italic;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px black;
+}
+
+section#alcaparras > p {
+    font-family: 'cantarell', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 1rem;
+}
+
+/*
+    Unidades:
+        - px
+        - em: por norma general 1em equivale a 16px. Siempre se toma como referencia
+              la fuente del elemento padre. (No recomendado para texto) 
+        - rem: toma como referencia la fuente del elemento raíz, el html. (Recomendado
+               para texto).
+        - porcentajes: toman como referencia la fuente del elemento padre.
+        - vw, vh: toman como referencia el ancho y alto de la página respectivamente.
+*/
+
+section#aceitunas {
+    font-size: 25px;
+}
+
+/* Dado que el tamaño de la fuente de la sección es de 25px: 1em = 25px */
+section#aceitunas > p {
+    font-size: 1em;
+}
+
+/* Dado que no hemos modificado el tamaño de la fuente de la sección de 
+   alcaparras se espera que: 1em = 16px. */
+section#alcaparras > p {
+    font-size: 1em;
+}
+
+/* Cambiamos la fuente de las sección pepinillos. */
+section#pepinillos {
+    font-size: 25px;
+}
+
+/* Indicamos que el párrafo que está dentro de la sección pepinillos tenga
+   un tamaño de fuente de 1rem, que será equivalente a 16px (el tamaño fuente
+   del elemento raíz, que es el html. 
+
+   Hay ciertas propiedades que no requieren de unidades de medida como es el
+   caso de "line-height".
+
+   Cuando escribimos 0 unidades no es necesario indicar la medida.
+*/
+section#pepinillos > p {
+    font-size: 1rem;
+    line-height: 1.2;
+}

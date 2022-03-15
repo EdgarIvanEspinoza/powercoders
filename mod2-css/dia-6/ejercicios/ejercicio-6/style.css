@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/** 
+HEADER
+*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header>ul a {
+    text-decoration: none;
+    color: black;
+}
+
+header>ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    gap: 10px;
+    
+}
+
+header>ul>li:last-child {
+    background-color: rgb(255, 196, 0);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+/** 
+HEAD SECTION
+*/
+main>section:first-child {
+    background-image: url("./img/car-background.jpg");
+    background-size: cover;  
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+main>section:first-child>h2 {
+    color: white;
+    text-shadow: 3px 2px black;
+}
+
+main>section:first-child>h3 {
+    color: rgb(255, 196, 0);
+    text-shadow: 3px 2px black;
+}
+main>section:first-child>button {
+    padding: 3px;
+    align-self: center;
+}
+
+/** 
+SECTION 2 Coches
+*/
+main>section:nth-child(2) {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.coches {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.coche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coche>img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.coche>button {
+    background-color: rgb(255, 196, 0);
+    border: 0px;
+    padding: 10px;
+    margin: auto;
+    width: 300px;
+}
+
+/** 
+FORM
+*/
+
+main>section:nth-child(3){
+    background-image: url(./img/form-background.jpeg);
+    background-size: cover; 
+}
+
+main>section:nth-child(3)>form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+}
+main>section:nth-child(3)>form>h2 {
+    color: rgb(255, 196, 0);
+    font-size: 1.4rem;
+}
+
+main>section:nth-child(3)>form>select, 
+main>section:nth-child(3)>form>input{
+    width: 200px;
+    background-color: transparent;
+    color: rgb(209, 209, 209);
+    border: none;
+    border-bottom: 1px solid white;
+    align-self: center;
+}
+
+main>section:nth-child(3)>form>button {
+    align-self: center;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
+/** 
+ABOUT US 
+*/
+
+main>section:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 30px;
+
+}
+
+main>section:nth-child(4)>* {
+    margin: 10px;
+}
+
+main>section:nth-child(4)>div>h3 {
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid rgb(255, 196, 0);
+    padding: 10px;
+    width: fit-content;
+    align-self: center;
+    margin: 15px auto;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+}

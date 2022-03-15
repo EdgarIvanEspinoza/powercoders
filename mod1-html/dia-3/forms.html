@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Módulo HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Formularios</h1>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Volver a inicio</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="#">
+                <fieldset>
+                    <legend>Datos de login</legend>
+                    <ul>
+                        <li>
+                            <label for="username">Usuario:</label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </li>
+                        <li>
+                            <label for="pass">Contraseña:</label>
+                            <input
+                                type="password"
+                                id="pass"
+                                name="pass"
+                                required
+                            />
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Otros datos</legend>
+                    <p>
+                        <label for="num">Cantidad:</label>
+                        <input
+                            type="number"
+                            id="num"
+                            name="num"
+                            step="10"
+                            disabled
+                        />
+                    </p>
+                    <p>
+                        <label for="tel">Teléfono:</label>
+                        <input type="tel" id="tel" name="tel" autofocus />
+                    </p>
+                    <p>
+                        <label for="web">Web:</label>
+                        <input
+                            type="url"
+                            id="web"
+                            name="web"
+                            placeholder="Escribe aquí la URL de tu web"
+                        />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Otro tipo de campos</legend>
+                    <fieldset>
+                        <legend>Permisos (checkbox)</legend>
+                        <p>
+                            <input
+                                type="checkbox"
+                                id="check"
+                                name="check"
+                                checked
+                            />
+                            <label for="check">
+                                Acepto los términos y condiciones
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="check2" name="check" />
+                            <label for="check2">
+                                Acepto la política de privacidad
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Género (radio)</legend>
+                        <ul>
+                            <li>
+                                <input type="radio" id="man" name="gender" />
+                                <label for="man">Hombre</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="woman" name="gender" />
+                                <label for="woman">Mujer</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="other" name="gender" />
+                                <label for="other">Otro</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Textarea</legend>
+                        <label for="message"></label>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Deja aquí tu mensaje..."
+                        ></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Desplegable</legend>
+                        <label for=""></label>
+                        <select name="simpsons" id="simpsons">
+                            <option value="0">Homer</option>
+                            <option value="1">Marge</option>
+                            <option value="2">Lisa</option>
+                            <option value="3" selected>Bart</option>
+                            <option value="4">Maggie</option>
+                        </select>
+                    </fieldset>
+                </fieldset>
+
+                <!-- No hace falta un botón "type=submit", basta con "type=button" -->
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+                <button type="button">Click!</button>
+            </form>
+        </main>
+    </body>
+</html>

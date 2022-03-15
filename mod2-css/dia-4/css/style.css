@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Por defecto el ancho total: width + padding + border */
+    /* Por defecto el alto total: height + padding + border */
+
+    /* Para corregir lo anterior y hacer que el ancho y alto
+       sean siempre lo que nosotros indiquemos en "width" y
+       "height" se utiliza la siguiente propiedad. */
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    height: 800px;
+    background-color: rgb(169, 180, 176);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+}
+
+main > div {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background-color: blanchedalmond;
+}
+
+main > div:first-child {
+    order: 2;
+}
+
+main > div:nth-child(4) {
+    order: 1;
+    flex-basis: 100px;
+}

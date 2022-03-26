@@ -1,87 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML y CSS 4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ejercicio HTML y CSS 4</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header>
-    <ul>
+  <body>
+    <header>
+      <ul>
+        <div>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Formulario</a></li>
+        </div>
+        <li><a href="#">Vacas</a></li>
+        <li><a href="#">Comprar</a></li>
+      </ul>
+    </header>
+    <section>
+      <h2>Lorem, ipsum.</h2>
       <div>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Formulario</a></li>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          odio nemo blanditiis! Unde facilis id esse impedit debitis ab
+          repellat?
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          veritatis quam corrupti commodi eaque laboriosam, ipsum unde
+          asperiores voluptatum eum.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse
+          iusto illo veritatis autem quaerat nemo officiis maxime tempore
+          voluptatibus. Ad, numquam? Dolor, hic ad blanditiis animi voluptatem
+          ea excepturi.
+        </p>
       </div>
-      <li><a href="#">Vacas</a></li>
-      <li><a href="#">Comprar</a></li>
-    </ul>
-  </header>
-  <section>
-    <h2>Lorem, ipsum.</h2>
-    <div>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio nemo blanditiis! Unde facilis id esse
-        impedit debitis ab repellat?
-        <br/>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis quam corrupti commodi eaque laboriosam,
-        ipsum unde asperiores voluptatum eum.</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo esse iusto illo veritatis autem quaerat nemo
-        officiis maxime tempore voluptatibus. Ad, numquam? Dolor, hic ad blanditiis animi voluptatem ea excepturi.</p>
-    </div>
-  </section>
-  <section>
-    <div>
-      <img src="./img/vaca_1.png" alt="cara de vaca">
-      <h3>Vaca 1</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio quidem hic nostrum, dignissimos labore.
-      </p>
-      <button>Comprar</button>
-    </div>
-    <div>
-      <img src="./img/vaca_1.png" alt="cara de vaca">
-      <h3>Vaca 1</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio quidem hic nostrum, dignissimos labore.
-      </p>
-      <button>Comprar</button>
-    </div>
-    <div>
-      <img src="./img/vaca_1.png" alt="cara de vaca">
-      <h3>Vaca 1</h3>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio quidem hic nostrum, dignissimos labore.
-      </p>
-      <button>Comprar</button>
-    </div>
-  </section>
-  <section>
-    <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-    <form action="#">
-      <label for="nombre">Nome e apellidos</label>
-      <input type="text" id="nombre" name="nombre">
+    </section>
+    <section class="masVacas">
+      <div>
+        <img src="./img/vaca_1.png" alt="cara de vaca" />
+        <h3>Vaca 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio
+          quidem hic nostrum, dignissimos labore.
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div>
+        <img src="./img/vaca_1.png" alt="cara de vaca" />
+        <h3>Vaca 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio
+          quidem hic nostrum, dignissimos labore.
+        </p>
+        <button>Comprar</button>
+      </div>
+      <div>
+        <img src="./img/vaca_1.png" alt="cara de vaca" />
+        <h3>Vaca 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum odio
+          quidem hic nostrum, dignissimos labore.
+        </p>
+        <button>Comprar</button>
+      </div>
+    </section>
+    <section class="formulario">
+      <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
+      <form action="#">
+        <label for="nombre">Nome e apellidos</label>
+        <input type="text" id="nombre" name="nombre" />
 
-      <label for="direccion">Dirección</label>
-      <input type="text" id="direccion" name="direccion">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" />
 
-      <label for="provincia">Provincia</label>
-      <select name="provincia" id="provincia"></select>
-      <option value="coruna">A coruña</option>
-      <option value="madrid">Madrid</option>
-      <option value="cataluña">Cataluña</option>
+        <label for="provincia">Provincia</label>
+        <select name="provincia" id="provincia">
+          <option value="coruna">A coruña</option>
+          <option value="madrid">Madrid</option>
+          <option value="cataluña">Cataluña</option>
+        </select>
 
-      <label for="comentarios">Comentarios</label>
-      <textarea name="comentario" id="comentario"></textarea>
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentario" id="comentario"></textarea>
 
-      <label for="news">Recibir Newsletter?</label>
-      <input type="checkbox" name="news" id="news">
+        <label for="news">Recibir Newsletter?</label>
+        <input type="checkbox" name="news" id="news" />
 
-      <button>Enviar</button>
-    </form>
-  </section>
-  <footer>
-
-  </footer>
-</body>
-
+        <button>Enviar</button>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
 </html>

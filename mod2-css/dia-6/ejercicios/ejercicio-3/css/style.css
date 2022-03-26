@@ -1,76 +1,126 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    position: relative;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-html{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* HEADER*/
 header {
-    background-image: url('../img/vaca_background.png');
-    background-position: center;
-    background-size: cover;
-    min-height: 80vmin;
-    padding-top: 0.5rem;
+  background-image: url('../img/vaca_background.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 80vmin;
+  padding: 1vmin 2vmin;
 }
 
-header>ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
+header > ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
 }
 
-header li {
-    margin:  auto 1.5em;
+header > li {
+  margin: auto 1.5em;
 }
 
-header>ul>div {
-    display: flex;
-    justify-content: flex-start;
-    gap: 0.3rem
+header > ul > div {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
 }
 
-
-header a{
-    text-decoration: none;
-    color: black;
+header a {
+  text-decoration: none;
+  color: black;
 }
 
-header>ul>li:nth-child(2)>a {
-    font-size: 2rem;
-    color: white;
+header > ul > li:nth-child(2) > a {
+  font-size: 2rem;
+  color: white;
 }
 
-header>ul>li:nth-child(3)>a {
-    color: white;
-    background-color: black;
-    padding:  0.2rem 0.8rem;
-    border-radius: 0.1rem;
+header > ul > li:nth-child(3) > a {
+  color: white;
+  background-color: black;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.1rem;
 }
 
 /*SECTION 2*/
 
-body>:nth-child(2) {
-    background-color: rgb(253, 152, 0);
+body > :nth-child(2) {
+  background-color: orange;
 }
 
-body>:nth-child(2)>h2 {
-    color: white;
-    padding: 1rem;
+body > :nth-child(2) > h2 {
+  color: white;
+  padding: 1rem;
 }
 
-body>:nth-child(2)>div {
-    font-size: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-height: 50vmin;
+body > :nth-child(2) > div {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-height: 50vmin;
 }
 
-body>:nth-child(2)>div>p {
-    min-width: 14rem;
-    padding: 0.4rem;
+body > :nth-child(2) > div > p {
+  min-width: 14rem;
+  padding: 0.4rem;
+}
+
+.masVacas {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: orange;
+  max-width: 100vmin;
+}
+
+.masVacas > div {
+  background-color: black;
+  margin: 2vmin;
+  min-width: 80vmin;
+}
+
+.masVacas > div > img {
+  width: 100%;
+}
+
+.masVacas > div > h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.masVacas > div > h3,
+.masVacas > div > p {
+  color: white;
+  padding: 5vmin;
+}
+
+.masVacas > div > button {
+  padding: 2vmin 5vmin;
+  width: 100%;
+  color: black;
+  background-color: grey;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario > h2 {
+  color: orange;
+}
+
+.formulario > form {
+  display: flex;
+  flex-direction: column;
 }

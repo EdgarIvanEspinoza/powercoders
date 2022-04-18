@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 32px;
+}
+
+body{
+  min-height: 100vh;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+gap: 2rem;
+
+}
+
+
+.morning{
+background-image: url(https://images.unsplash.com/photo-1571080648416-3fda23702c51?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bW9ybmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+
+.afternoon{
+background-image: url(https://images.unsplash.com/photo-1588714477688-cf28a50e94f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWZ0ZXJub29ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+
+background-position: center;
+}
+
+.night{
+background-image: url(https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1213&q=80);
+}
+
+
+
+h1{
+  font-family: monospace;
+}
+
+h1, h2{
+  background-color: rgba(255, 255, 255, 0.63);
+  padding: 3rem ;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+
+.night h1, .night h2{
+  background-color: rgba(0, 255, 255, 0.377);
+  backdrop-filter: brightness(200%) blur(5px);
+}
+
+
+.morning h1, .morning h2{
+  background-color: rgba(114, 0, 155, 0.527);
+  color: white;
+}

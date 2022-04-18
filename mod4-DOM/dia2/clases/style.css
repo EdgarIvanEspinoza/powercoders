@@ -1,0 +1,14 @@
+.importante{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.grande{
+  font-size: 1.5rem;
+  color: blue;
+}
+
+.otra{
+  font-family: sans-serif;
+}

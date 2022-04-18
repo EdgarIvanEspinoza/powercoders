@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{ /* tambien vale html */
+  --background: rgb(255, 255, 255);
+  --textColor: rgb(0, 0, 0);
+  --headerBack: rgb(143, 255, 255);
+  --headerColor: rgb(84, 0, 162);
+
+  background: var(--background);
+  color: var(--textColor);
+}
+
+:root.dark{ /* tambien vale html.dark */
+  --background: rgb(1, 0, 65);
+  --textColor: rgb(242, 210, 255);
+  --headerBack: rgb(70, 0, 91);
+  --headerColor: rgb(201, 255, 250);
+
+}
+
+html.night{ /* tambien vale :root.dark */
+  --background: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=850&q=80");
+  --textColor: rgb(242, 210, 255);
+  --headerBack: rgba(70, 0, 91, 0.704);
+  --headerColor: rgb(201, 255, 250);
+
+}
+
+.night article{
+  background: rgba(0, 255, 255, 0.522);
+  backdrop-filter: blur(5px);
+}
+
+
+header{
+  background: var(--headerBack);
+  text-align: center;
+}
+
+h1, h2{
+  padding: 2rem;
+  color: var(--headerColor)
+}
+
+p{
+  margin: 0 2rem;
+}
+
+
+article{
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  background: var(--headerColor);
+  color: var(--background);
+}
+
